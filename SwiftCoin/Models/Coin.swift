@@ -22,7 +22,6 @@ struct Coin: Codable, Identifiable {
     let atl, atlChangePercentage: Double?
     let atlDate: String?
     let lastUpdated: String?
-    //    let sparklineIn7D: SparklineIn7D?
     let priceChangePercentage24HInCurrency: Double
     
     enum CodingKeys: String, CodingKey {
@@ -48,7 +47,6 @@ struct Coin: Codable, Identifiable {
         case atlChangePercentage = "atl_change_percentage"
         case atlDate = "atl_date"
         case lastUpdated = "last_updated"
-        //        case sparklineIn7D = "sparkline_in_7d"
         case priceChangePercentage24HInCurrency = "price_change_percentage_24h_in_currency"
     }
 }
